@@ -54,5 +54,12 @@ function getDaysInMonth(year,month){
 }
 
 btn.addEventListener("click", function(){
-    calculateAge();
+    if(input.value === "")
+    {
+        alert("Please Select Date");
+    }
+    else{
+        calculateAge();
+    }
+   
 });
